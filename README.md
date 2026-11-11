@@ -2,10 +2,10 @@
 
 Site estático da nutricionista Karina Ribeiro (React + Vite + TypeScript + Tailwind CSS).
 
-**Hospedagem preferida:** Firebase Hosting + GitHub Actions  
-**Repositório (alvo):** [github.com/andrecatsilva97043331-gif/vemkanutrir-site](https://github.com/andrecatsilva97043331-gif/vemkanutrir-site)
-
-> Se o link ainda der 404, o push inicial ainda não foi feito — veja [Publicar no GitHub](#publicar-no-github).
+**Hospedagem:** Firebase Hosting + GitHub Actions  
+**Site (live):** https://vemkanutrir-site.web.app  
+**Repositório:** [github.com/andrecatsilva97043331-gif/vemkanutrir-site](https://github.com/andrecatsilva97043331-gif/vemkanutrir-site)  
+**Console Firebase:** https://console.firebase.google.com/project/vemkanutrir-site/overview
 
 ## Rodar localmente
 
