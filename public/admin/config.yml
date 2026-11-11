@@ -1,0 +1,89 @@
+# Decap CMS — backend GitHub via Netlify Identity / Git Gateway.
+# Não coloque tokens ou secrets neste arquivo.
+# Em produção (Netlify): ative Identity + Git Gateway.
+# Variáveis de ambiente ficam no painel do host (nunca no front).
+
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: public/fotos
+public_folder: /fotos
+
+locale: pt
+
+collections:
+  - name: sobre
+    label: Sobre
+    files:
+      - name: sobre
+        label: Página Sobre
+        file: src/content/sobre.json
+        fields:
+          - { label: Título, name: titulo, widget: string }
+          - { label: Subtítulo, name: subtitulo, widget: string }
+          - { label: Formação, name: formacao, widget: text }
+          - { label: Abordagem, name: abordagem, widget: text }
+          - { label: Foto (caminho), name: foto, widget: string }
+          - { label: Texto alternativo da foto, name: fotoAlt, widget: string }
+
+  - name: servicos
+    label: Serviços
+    files:
+      - name: servicos
+        label: Lista de serviços
+        file: src/content/servicos.json
+        fields:
+          - { label: Título, name: titulo, widget: string }
+          - { label: Subtítulo, name: subtitulo, widget: string }
+          - label: Itens
+            name: itens
+            widget: list
+            fields:
+              - { label: ID, name: id, widget: string }
+              - {
+                  label: Ícone Lucide,
+                  name: icone,
+                  widget: select,
+                  options: [Stethoscope, ClipboardList, Salad],
+                }
+              - { label: Título, name: titulo, widget: string }
+              - { label: Descrição, name: descricao, widget: text }
+
+  - name: depoimentos
+    label: Depoimentos
+    files:
+      - name: depoimentos
+        label: Lista de depoimentos
+        file: src/content/depoimentos.json
+        fields:
+          - { label: Título, name: titulo, widget: string }
+          - { label: Subtítulo, name: subtitulo, widget: string }
+          - label: Itens
+            name: itens
+            widget: list
+            fields:
+              - { label: ID, name: id, widget: string }
+              - { label: Nome, name: nome, widget: string }
+              - { label: Texto, name: texto, widget: text }
+              - { label: Destaque, name: destaque, widget: boolean, required: false }
+
+  - name: galeria
+    label: Galeria
+    files:
+      - name: fotos
+        label: Fotos da galeria
+        file: src/content/fotos.json
+        fields:
+          - { label: Título, name: titulo, widget: string }
+          - { label: Subtítulo, name: subtitulo, widget: string }
+          - label: Itens
+            name: itens
+            widget: list
+            fields:
+              - { label: ID, name: id, widget: string }
+              - { label: Imagem, name: src, widget: image }
+              - { label: Alt, name: alt, widget: string }
+              - { label: Legenda, name: legenda, widget: string, required: false }

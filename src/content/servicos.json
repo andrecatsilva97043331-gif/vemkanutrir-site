@@ -1,0 +1,24 @@
+{
+  "titulo": "Serviços",
+  "subtitulo": "Acompanhamento nutricional personalizado",
+  "itens": [
+    {
+      "id": "consulta",
+      "icone": "Stethoscope",
+      "titulo": "Consulta nutricional",
+      "descricao": "Descrição a preencher."
+    },
+    {
+      "id": "acompanhamento",
+      "icone": "ClipboardList",
+      "titulo": "Acompanhamento contínuo",
+      "descricao": "Descrição a preencher."
+    },
+    {
+      "id": "plano",
+      "icone": "Salad",
+      "titulo": "Plano alimentar",
+      "descricao": "Descrição a preencher."
+    }
+  ]
+}

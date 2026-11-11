@@ -1,0 +1,18 @@
+{
+  "titulo": "Galeria",
+  "subtitulo": "Bastidores e momentos do consultório",
+  "itens": [
+    {
+      "id": "foto-1",
+      "src": "/fotos/placeholder-galeria-1.svg",
+      "alt": "Placeholder — foto da galeria 1",
+      "legenda": "Legenda a preencher"
+    },
+    {
+      "id": "foto-2",
+      "src": "/fotos/placeholder-galeria-2.svg",
+      "alt": "Placeholder — foto da galeria 2",
+      "legenda": "Legenda a preencher"
+    }
+  ]
+}

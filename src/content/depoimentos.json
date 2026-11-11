@@ -1,0 +1,24 @@
+{
+  "titulo": "Depoimentos",
+  "subtitulo": "O que dizem quem já passou por aqui",
+  "itens": [
+    {
+      "id": "dep-1",
+      "nome": "Nome a preencher",
+      "texto": "Depoimento a preencher.",
+      "destaque": true
+    },
+    {
+      "id": "dep-2",
+      "nome": "Nome a preencher",
+      "texto": "Depoimento a preencher.",
+      "destaque": false
+    },
+    {
+      "id": "dep-3",
+      "nome": "Nome a preencher",
+      "texto": "Depoimento a preencher.",
+      "destaque": false
+    }
+  ]
+}
